@@ -12,12 +12,15 @@ body {
   color:white;
   font-family:courier new;
   font-style:bold;
+  margin-bottom:0px;
 }
 
 h2 {
   color:white;
   font-family:tahoma;
   font-size:21px;
+  font-style:italic;
+  margin-top:0px;
 }
 
 p {
@@ -48,12 +51,18 @@ hr {
   border-top:1px solid #8A7FB4;
 }
 
+mark {
+  text-shadow: 0 0 3px #ffa752;
+  color:white;
+  background-color:transparent;
+}
+
 .scream {
   float:right;
   margin-right:20%;
 }
 
-.test{
+.test {
   float:right;
   width:40%;
   margin-right:20%;
@@ -64,13 +73,25 @@ hr {
   position:relative;
 }
 
-.slanty{
+.slanty {
   -webkit-transform: rotate(10deg);
   transform: rotate(10deg);
   margin-top:20px;
   width:230px;
   position:relative;
-  }
+}
+
+.rotate {
+  position:relative;
+  width:150px;
+  text-align:center;
+  transition: 2s;
+  -webkit-transition: 2s;
+}
+
+.rotate:hover {
+  transform:rotateX(180deg);
+}
 
 table {
   width:40%;
